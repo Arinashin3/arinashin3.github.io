@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Web Archive (prometheus)" type="StardustRunConfiguration" factoryName="save-as-zip">
+    <option name="folderPath" value="$PROJECT_DIR$" />
+    <option name="instanceId" value="prometheus" />
+    <option name="instanceName" value="Prometheus" />
+    <method v="2" />
+  </configuration>
+</component>
