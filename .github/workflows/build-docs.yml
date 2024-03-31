@@ -11,7 +11,7 @@ permissions:
 
 env:
   INSTANCE: 'Writerside/prometheus'
-  ARTIFACT: 'webHelpHI2-all.zip'
+  ARTIFACT: 'webHelpPROMETHEUS2-all.zip'
   DOCKER_VERSION: '233.14938'
   ALGOLIA_ARTIFACT: 'algolia-indexes-HI.zip'
   ALGOLIA_APP_NAME: 'NLAGB2LZHU'
