@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="ad"
+                 name="Arinashin3 Doc"
+                 start-page="starter-topic.md">
+
+    <toc-element topic="starter-topic.md"/>
+    <toc-element topic="모니터링-툴.md">
+        <toc-element topic="Prometheus.md">
+            <toc-element topic="Prometheus란.md">
+            </toc-element>
+            <toc-element topic="데이터-모델.md"/>
+            <toc-element topic="데이터-시각화.md"/>
+        </toc-element>
+    </toc-element>
+</instance-profile>
