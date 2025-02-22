@@ -1,0 +1,43 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2024-11-09T13:00:02.401817"><title>Install | System 관리</title><script type="application/json" id="virtual-toc-data">[{"id":"prometheus","level":0,"title":"Prometheus 설치","anchor":"#prometheus"},{"id":"-ea8hgy_4","level":0,"title":"파일 설명","anchor":"#-ea8hgy_4"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b419/app.css" rel="stylesheet"><meta name="msapplication-TileColor" content="#000000"><link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Install | System 관리"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="System 관리 Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/prometheus-install.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Install | System 관리"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/prometheus-install.html#webpage",
+    "url": "writerside-documentation/prometheus-install.html",
+    "name": "Install | System 관리",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "System 관리 Help"
+}</script><!-- End Schema.org --></head><body data-id="prometheus-Install" data-main-title="Install" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="모니터링.md|모니터링 툴///Prometheus.md|Prometheus"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>System 관리  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="prometheus-Install" id="prometheus-Install.md">Install</h1><section class="chapter"><h2 id="prometheus" data-toc="prometheus">Prometheus 설치</h2><ol class="list _decimal" id="-ea8hgy_5" type="1"><li class="list__item" id="-ea8hgy_10"><p>prometheus 공식 문서 페이지에서 원하는 버전으로 다운로드 후, 압축해제합니다.</p></li></ol><div class="code-block" data-lang="bash">
+cd /tmp
+curl -LO https://github.com/prometheus/prometheus/releases/download/v2.53.2/prometheus-2.53.2.linux-amd64.tar.gz
+tar -zxvf prometheus-2.53.2.linux-amd64.tar.gz
+mv prometheus-2.53.2.linux-amd64 /etc/prometheus
+mv /etc/prometheus/prometheus /usr/bin
+mv /etc/prometheus/prometool /usr/bin
+mkdir /prometheus   # prometheus data directory
+</div><ol class="list _decimal" id="-ea8hgy_7" type="1" start="2"><li class="list__item" id="-ea8hgy_11"><p>서비스 파일을 생성한다.</p></li></ol><p id="-ea8hgy_8">파일 : /etc/systemd/system/prometheus.service</p><div class="code-block" data-lang="plaintext">
+[Unit]
+Description=Prometheus
+
+[Service]
+ExecStart=/usr/bin/prometheus \
+          --config.file=&quot;/etc/prometheus/prometheus.yml&quot; \
+          --storage.tsdb.path=&quot;/prometheus&quot; \
+          --enable-feature=remote-write-receiver \
+          --web.enable-lifecycle \
+          --storage.tsdb.max-block-duration=2h \
+          --storage.tsdb.min-block-duration=2h \
+          --web.enable-admin-api
+
+ExecReload=/bin/kill -HUP $MAINPID
+
+[Install]
+WantedBy=multi-user.target
+Alias=prometheus.service
+</div></section><section class="chapter"><h2 id="-ea8hgy_4" data-toc="-ea8hgy_4">파일 설명</h2><p id="-ea8hgy_12">파일을 압축해제하면 기본적으로 다음과 같은 파일이 생긴다.</p><figure id="-ea8hgy_13"><img alt="prometheus-ls.png" src="images/prometheus-ls.png" title="prometheus-ls.png" width="639" height="175"></figure><div class="table-wrapper"><table class="wide" id="-ea8hgy_14"><thead><tr class="ijRowHead" id="-ea8hgy_15"><th id="-ea8hgy_23"><p>파일 명</p></th><th id="-ea8hgy_24"><p>설명</p></th></tr></thead><tbody><tr id="-ea8hgy_16"><td id="-ea8hgy_25"><p>LICENSE</p></td><td id="-ea8hgy_26"><p>Prometheus의 라이센스에 대한 정보가 들어있다.</p></td></tr><tr id="-ea8hgy_17"><td id="-ea8hgy_27"><p>NOTICE</p></td><td id="-ea8hgy_28"><p>code들의 라이센스 정보가 들어있다.</p></td></tr><tr id="-ea8hgy_18"><td id="-ea8hgy_29"><p>console_libraries</p></td><td id="-ea8hgy_30"><p>Prometheus WebUI를 사용할 때, 라이브러리(페이지 목록) 파일들이다.</p></td></tr><tr id="-ea8hgy_19"><td id="-ea8hgy_31"><p>consoles</p></td><td id="-ea8hgy_32"><p>Prometheus WebUI를 사용할 때, 대시보드(페이지) 파일들이다.</p></td></tr><tr id="-ea8hgy_20"><td id="-ea8hgy_33"><p>prometheus</p></td><td id="-ea8hgy_34"><p>prometheus 실행파일이다.</p></td></tr><tr id="-ea8hgy_21"><td id="-ea8hgy_35"><p>prometheus.yml</p></td><td id="-ea8hgy_36"><p>prometheus 설정파일이다.</p></td></tr><tr id="-ea8hgy_22"><td id="-ea8hgy_37"><p>promtool</p></td><td id="-ea8hgy_38"><p>prometheus 관리를 위한 도구이다.</p></td></tr></tbody></table></div></section><div class="last-modified">Last modified: 09 11월 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="prometheus-introduce.html" class="navigation-links__prev">Introduce</a><a href="thanos.html" class="navigation-links__next">Thanos</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b419/app.js"></script></body></html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rules SYSTEM "https://resources.jetbrains.com/writerside/1.0/redirection-rules.dtd">
+<rules>
+    <!-- format is as follows
+    <rule id="<unique id>">
+        <accepts>page.html</accepts>
+    </rule>
+    -->
+    <rule id="53aa7fd4">
+        <description>Created after removal of "Linux" from System 관리</description>
+        <accepts>Linux.html</accepts>
+    </rule>
+    <rule id="57dd3ce2">
+        <description>Created after removal of "설정 방법" from System 관리</description>
+        <accepts>설정-방법.html</accepts>
+    </rule>
+</rules>

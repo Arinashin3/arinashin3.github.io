@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="in"
+                 name="System 관리"
+                 start-page="Section-Starting-Page.topic">
+
+    <toc-element topic="Section-Starting-Page.topic"/>
+    <toc-element topic="Starter.md"/>
+    <toc-element topic="계정관리.md">
+        <toc-element topic="계정관리-진단기준.md">
+            <toc-element topic="취약한-패스워드-사용.md"/>
+            <toc-element topic="Shadow-패스워드-정책.md"/>
+            <toc-element topic="계정잠금-임계값-설정.md"/>
+            <toc-element topic="패스워드-최소길이-설정.md"/>
+            <toc-element topic="패스워드-최대-최소기간-설정.md"/>
+        </toc-element>
+    </toc-element>
+    <toc-element topic="scm.md">
+        <toc-element topic="scm-tool.md">
+        </toc-element>
+        <toc-element topic="형상관리-실습.md">
+            <toc-element topic="SVN-실습.md"/>
+        </toc-element>
+    </toc-element>
+    <toc-element topic="컨테이너.md">
+        <toc-element topic="image.md"/>
+        <toc-element topic="docker-Network.md"/>
+        <toc-element topic="Docker.md">
+        </toc-element>
+    </toc-element>
+    <toc-element topic="시스템모니터링.md">
+        <toc-element topic="스토리지-모니터링.md">
+            <toc-element topic="스토리지-예방적-모니터링.md"/>
+        </toc-element>
+        <toc-element topic="모니터링.md">
+            <toc-element topic="Grafana.md">
+                <toc-element topic="grafana-Install.md"/>
+                <toc-element topic="grafana-Integration.md">
+                    <toc-element topic="Grafana-Integration-Prometheus.md">
+                        <toc-element topic="Grafana-Integration-Prometheus-Linux.md"/>
+                        <toc-element topic="Grafana-Integration-Prometheus-Windows.md"/>
+                        <toc-element topic="Grafana-Integration-Prometheus-vmware1.md"/>
+                    </toc-element>
+                    <toc-element topic="Grafana-Integration-Zabbix.md"/>
+                </toc-element>
+            </toc-element>
+            <toc-element topic="Prometheus.md">
+                <toc-element topic="prometheus-Introduce.md"/>
+                <toc-element topic="prometheus-Install.md"/>
+            </toc-element>
+            <toc-element topic="Thanos.md">
+                <toc-element topic="thanos-Install.md"/>
+                <toc-element topic="thanos-Component.md"/>
+            </toc-element>
+            <toc-element topic="Zabbix.md"/>
+            <toc-element topic="PMM2.md"/>
+            <toc-element topic="InfluxDB.md"/>
+        </toc-element>
+    </toc-element>
+</instance-profile>
