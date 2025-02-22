@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="247aa485-b29f-4c89-8618-6f1015ff8f28" name="Changes" comment="Make Document" />
+    <list default="true" id="247aa485-b29f-4c89-8618-6f1015ff8f28" name="Changes" comment="Make Document">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/build-docs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
