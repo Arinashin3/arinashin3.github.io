@@ -1,3 +1,0 @@
-# About Prometheus
-
-Start typing here...

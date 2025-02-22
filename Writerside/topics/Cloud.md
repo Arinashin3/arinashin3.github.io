@@ -1,3 +1,0 @@
-# Cloud
-
-Start typing here...

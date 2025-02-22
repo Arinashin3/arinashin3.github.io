@@ -1,3 +1,0 @@
-# VCenter
-
-Start typing here...
