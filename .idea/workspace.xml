@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="247aa485-b29f-4c89-8618-6f1015ff8f28" name="Changes" comment="Make Document">
-      <change afterPath="$PROJECT_DIR$/Writerside/ad.tree" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/c.list" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/cfg/buildprofiles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/topics/Prometheus.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/topics/Prometheus란.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/topics/starter-topic.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/topics/데이터-모델.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/topics/데이터-시각화.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/topics/모니터링-툴.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/v.list" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/writerside.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="247aa485-b29f-4c89-8618-6f1015ff8f28" name="Changes" comment="Make Document" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,6 +80,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
