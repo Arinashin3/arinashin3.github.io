@@ -6,8 +6,8 @@
         <accepts>page.html</accepts>
     </rule>
     -->
-    <rule id="e84533c">
-        <description>Created after removal of "Prometheus란?" from Arinashin3 Doc</description>
-        <accepts>Prometheus란.html</accepts>
+    <rule id="74141ca">
+        <description>Created after removal of "컴포넌트" from Arinashin3 Doc</description>
+        <accepts>컴포넌트.html</accepts>
     </rule>
 </rules>

@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="247aa485-b29f-4c89-8618-6f1015ff8f28" name="Changes" comment="Make Document">
-      <change afterPath="$PROJECT_DIR$/Writerside/images/timeseries-data.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/redirection-rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/Agent.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/Node-Exporter.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/Prometheus란.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/Windows-Exporter.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/설정.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/시작하기.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/컴포넌트.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Writerside/ad.tree" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/ad.tree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/redirection-rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/redirection-rules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Writerside/topics/Prometheus.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/Prometheus.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/topics/Prometheus란.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/topics/데이터-모델.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/데이터-모델.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

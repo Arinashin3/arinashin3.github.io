@@ -9,8 +9,18 @@
     <toc-element topic="starter-topic.md"/>
     <toc-element topic="모니터링-툴.md">
         <toc-element topic="Prometheus.md">
-            <toc-element topic="데이터-모델.md"/>
-            <toc-element topic="데이터-시각화.md"/>
+            <toc-element topic="Prometheus란.md">
+                <toc-element topic="데이터-모델.md"/>
+                <toc-element topic="데이터-시각화.md"/>
+                <toc-element topic="컴포넌트.md"/>
+            </toc-element>
+            <toc-element topic="시작하기.md">
+                <toc-element topic="Node-Exporter.md"/>
+                <toc-element topic="Windows-Exporter.md"/>
+                <toc-element topic="Agent.md">
+                </toc-element>
+            </toc-element>
+            <toc-element topic="설정.md"/>
         </toc-element>
     </toc-element>
 </instance-profile>
