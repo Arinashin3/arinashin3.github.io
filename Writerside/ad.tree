@@ -9,8 +9,6 @@
     <toc-element topic="starter-topic.md"/>
     <toc-element topic="모니터링-툴.md">
         <toc-element topic="Prometheus.md">
-            <toc-element topic="Prometheus란.md">
-            </toc-element>
             <toc-element topic="데이터-모델.md"/>
             <toc-element topic="데이터-시각화.md"/>
         </toc-element>

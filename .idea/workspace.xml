@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="247aa485-b29f-4c89-8618-6f1015ff8f28" name="Changes" comment="Make Document">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/build-docs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build-docs.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/images/timeseries-data.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/redirection-rules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/ad.tree" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/ad.tree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/topics/Prometheus.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/Prometheus.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/topics/Prometheus란.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/topics/데이터-모델.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/데이터-모델.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +106,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "Writerside.Web Archive (in).executor": "Run",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/arina/WritersideProjects/untitled3",
